@@ -11,29 +11,14 @@ import LoanCalculator from './views/Homepage/LoanCalculator';
 import Solutions from './views/Homepage/Solutions';
 import Ticker from './views/Homepage/Ticker';
 import Tools from './views/Homepage/Tools';
-// import Homepage from './views/Homepage/Homepage';
-// import Banner from './Banner';
-// import Ticker from './Ticker';
-// import Solutions from './Solutions';
-// import BusinessSolutions from './BusinessSolutions';
-// import EliteBanking from './EliteBanking';
-// import LoanCalculator from './LoanCalculator';
-// import Tools from './Tools';
-// import Apps from './Apps';
 import Splashscreen from './views/Splashscreen';
 
 function App() {
   return (
     <div className='App'>
-      {/* <Switch>
-        <Route path="/" exact render={(props) => <HomePage {...props} />} />
-        </Switch> */}
       <Splashscreen />
       <Nav1 />
       <Nav2 />
-      {/* <Switch>
-        <Route path='/' exact render={(props) => <Homepage {...props} />} />
-      </Switch> */}
       <Banner />
       <Ticker />
       <Solutions />
@@ -43,19 +28,6 @@ function App() {
       <Tools />
       <Apps />
       <Footer />
-      {/* 
-      Nav1
-       Nav2
-       Banner
-       ForexSlider
-       SolutionsForYou
-       SolutionsForBusiness
-       EliteBanking
-       Loan
-       BankingTools
-       CallToAction
-       Footer
-       */}
     </div>
   );
 }
