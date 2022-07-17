@@ -1,0 +1,67 @@
+.bg-gray {
+  background-color: var(--color-gray) !important;
+}
+
+.py-1 {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
+.h-auto {
+  height: auto !important;
+}
+
+.text-lg {
+  font-size: var(--text-lg) !important;
+}
+
+#ticker {
+  background-color: var(--color-white);
+  height: 44px;
+  overflow: hidden;
+}
+#ticker .wrapper {
+  display: table;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  color: var(--color-primary);
+  table-layout: fixed;
+}
+#ticker .col {
+  display: table-cell;
+  vertical-align: middle;
+}
+#ticker .col.left {
+  width: 110px;
+}
+#ticker .col.right {
+  padding-left: 20px;
+  overflow: hidden;
+}
+#ticker .label {
+  display: block;
+  font-weight: bold;
+  font-size: var(--text-sm);
+  text-transform: uppercase;
+}
+#ticker .tickercontainer {
+  height: auto !important;
+  color: var(--color-primary);
+  overflow: hidden;
+}
+#ticker .tickercontainer .mask {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+#ticker #forex-ticker li {
+  font-size: var(--text-xs);
+  font-weight: normal;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 10px !important;
+}
+#ticker #forex-ticker .currency {
+  font-weight: bold;
+}

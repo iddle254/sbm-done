@@ -1,0 +1,262 @@
+.loan-calculator {
+  background-color: var(--color-gray);
+  padding: 54px 50px;
+  padding-right: 370px;
+  position: relative;
+  margin-bottom: 72px;
+  border-radius: 12px;
+}
+.loan-calculator.visible {
+  -webkit-transition-delay: 1s;
+  -o-transition-delay: 1s;
+  transition-delay: 1s;
+}
+.loan-calculator form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 0 -26px;
+}
+.loan-calculator .field {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 26%;
+  flex: 0 0 26%;
+  padding: 0 1rem;
+}
+.loan-calculator .label {
+  display: block;
+  margin-bottom: 12px;
+  font-size: var(--text-base);
+  color: var(--color-primary);
+}
+.loan-calculator .input-wrapper {
+  position: relative;
+}
+.loan-calculator .textbox {
+  border: 1px solid var(--color-primary);
+  height: 45px;
+  padding: 0 20px;
+  font-family: 'Helvetica', sans-serif;
+  color: var(--color-primary);
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  margin: 0;
+  font-size: 0.85rem;
+  border-radius: var(--rounded-full);
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.loan-calculator .textbox.has-label {
+  padding-right: 70px;
+}
+.loan-calculator .input-wrapper label {
+  position: absolute;
+  right: 0;
+  top: 0;
+  line-height: 3.25;
+  font-size: 0.85rem;
+  color: var(--color-primary);
+  padding-right: 15px;
+}
+.loan-calculator .textbox:focus {
+  border-color: var(--color-primary-light);
+}
+.loan-calculator::-webkit-input-placeholder {
+  opacity: 0.3;
+  color: var(--color-primary);
+}
+.loan-calculator::-moz-placeholder {
+  opacity: 0.3;
+  color: var(--color-primary);
+}
+.loan-calculator:-moz-placeholder {
+  opacity: 0.3;
+  color: var(--color-primary);
+}
+.loan-calculator:-ms-input-placeholder {
+  opacity: 0.3;
+  color: var(--color-primary);
+}
+.loan-calculator input::-webkit-outer-spin-button,
+.loan-calculator input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.loan-calculator input[type='number'] {
+  -moz-appearance: textfield;
+}
+.loan-calculator .dd-wrapper {
+  position: relative;
+}
+.loan-calculator .dd-wrapper:before {
+  position: absolute;
+  top: 4px;
+  right: 16px;
+  line-height: 37px;
+  font-size: var(--text-xl);
+  color: var(--color-primary);
+  z-index: 0;
+}
+.loan-calculator .dd-wrapper select {
+  -webkit-appearance: none;
+  position: relative;
+  z-index: 1;
+  padding-right: 40px;
+}
+.loan-calculator .primary-btn {
+  height: 2.8rem;
+  font-size: 0.85rem;
+  width: 100%;
+}
+.loan-calculator .results {
+  width: 18rem;
+  position: absolute;
+  right: 40px;
+  color: var(--color-white);
+  top: 50%;
+  background-color: var(--color-primary-light);
+  padding: 2rem 2rem;
+  opacity: 0;
+  border-radius: 12px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.loan-calculator .results.show {
+  opacity: 1;
+  right: 0;
+}
+.loan-calculator .results .title {
+  display: block;
+}
+.loan-calculator .results .value {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--color-primary);
+}
+.loan-calculator .results li {
+  margin-top: 18px;
+}
+.loan-calculator .results li:first-child {
+  margin-top: 0;
+}
+.loan-calculator .results .primary-btn {
+  width: 100%;
+}
+.loan-calculator .results .primary-btn:hover {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+}
+@media only screen and (max-width: 1500px) {
+  .loan-calculator .field {
+    padding: 0 12px;
+  }
+}
+@media only screen and (max-width: 1370px) {
+  .loan-calculator .results {
+    width: 280px;
+  }
+  .loan-calculator .results .value {
+    font-size: 30px;
+  }
+  .loan-calculator {
+    padding: 50px 40px;
+    padding-right: 300px;
+    margin-bottom: 40px;
+  }
+  .loan-calculator .field {
+    padding: 0 8px;
+  }
+  .loan-calculator .label {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .loan-calculator {
+    margin-bottom: 24px;
+    padding-right: 220px;
+  }
+  .loan-calculator .results {
+    padding: 20px 30px;
+    width: 220px;
+  }
+  .loan-calculator .results .value {
+    font-size: 26px;
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  .loan-calculator {
+    padding: 40px;
+    margin-bottom: 0;
+  }
+  .loan-calculator .results {
+    position: relative;
+    top: -40px;
+    right: auto;
+    margin: 10px auto 0 auto;
+    padding: 30px 20px 20px 20px;
+    width: 280px;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  .loan-calculator .results.show {
+    top: 0;
+  }
+  .loan-calculator form {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .loan-calculator .field {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    padding: 0 10px 12px 10px;
+  }
+  .loan-calculator .label {
+    margin-bottom: 6px;
+  }
+  .loan-calculator .primary-btn {
+    width: 100%;
+  }
+  .loan-calculator {
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  .loan-calculator .results {
+    display: none;
+  }
+  .loan-calculator .results.show {
+    display: block;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .loan-calculator {
+    padding: 20px 10px 10px 10px;
+  }
+  .loan-calculator .field {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+  .loan-calculator form {
+    width: 100%;
+    margin: 0;
+  }
+  .loan-calculator .results {
+    width: auto;
+    margin: 10px;
+  }
+  .loan-calculator .label.spacer {
+    display: none;
+  }
+}
