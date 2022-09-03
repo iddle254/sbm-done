@@ -16,7 +16,7 @@ import Splashscreen from './views/Splashscreen';
 function App() {
   return (
     <div className='App'>
-      <Splashscreen />
+      {/* <Splashscreen /> */}
       <Nav1 />
       <Nav2 />
       <Banner />
