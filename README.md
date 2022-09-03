@@ -1,4 +1,4 @@
-## SBM Bank landing page
+## SBM Bank landing page [![Build Status](https://app.travis-ci.com/iddle254/sbm-done.svg?branch=main)](https://app.travis-ci.com/iddle254/sbm-done)
 
 SBM clone is a cloned landing page made using React and Bootstrap(Reactstrap).
 
